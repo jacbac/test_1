@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/vendor/dropzone.css" />
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
@@ -22,12 +23,124 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate enhanced with Bootstrap 3 by jacbac</p>
+  <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="../" class="navbar-brand">Test #1</a>
+      </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="../getting-started">Getting started</a>
+          </li>
+          <li class="active">
+            <a href="../css">CSS</a>
+          </li>
+          <li>
+            <a href="../components">Components</a>
+          </li>
+          <li>
+            <a href="../javascript">JavaScript</a>
+          </li>
+          <li>
+            <a href="../customize">Customize</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="main" class="row">
+      <div class="col-md-12">
+        <p>Hello World ! This is the public main page !</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bs-footer" role="contentinfo">
+    <div class="container">
+      <div class="bs-social">
+        <ul class="bs-social-buttons">
+          <li>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+          </li>
+          <li>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
+          </li>
+          <li class="follow-btn">
+            <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/follow_button.1380844203.html#_=1380968888016&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=twbootstrap&amp;show_count=true&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 237px; height: 20px;"></iframe>
+          </li>
+          <li class="tweet-btn">
+            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1380844203.html#_=1380968888013&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fgetbootstrap.com%2Fcss%2F&amp;related=mdo%3ACreator%20of%20Twitter%20Bootstrap&amp;size=m&amp;text=CSS%20%C2%B7%20Bootstrap&amp;url=http%3A%2F%2Fgetbootstrap.com%2F&amp;via=twbootstrap" class="twitter-share-button twitter-tweet-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 107px; height: 20px;"></iframe>
+          </li>
+        </ul>
+      </div>
+
+      <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+      <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+      <ul class="footer-links">
+        <li><a href="../2.3.2/">Bootstrap 2.3.2 docs</a></li>
+        <li class="muted">·</li>
+        <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+        <li class="muted">·</li>
+        <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+        <li class="muted">·</li>
+        <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div id="admin-sidebar" class="row">
+    <div class="container">
+      <div id="main-admin-sidebar" class="row">
+        <ul class="nav nav-tabs" id="myTab">
+          <li class="active"><a href="#home">Sélection</a></li>
+          <li><a href="#import">Import</a></li>
+          <li><a href="#settings">Paramètres</a></li>
+          <li><a href="#help">Aide</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="home">
+            <div class="col-xs-12 col-md-12">
+              <p>Hello World ! This is the HOME !</p>
+            </div>
+          </div>
+          <div class="tab-pane" id="import">
+            <div class="col-xs-12 col-md-12">
+              <form action="/admin-" id="admin-img-dropzone" class="dropzone"></form>
+            </div>
+          </div>
+          <div class="tab-pane" id="settings">
+            <div class="col-xs-12 col-md-12">
+              <p>This is the SETTINGS !</p>
+            </div>
+          </div>
+          <div class="tab-pane" id="help">
+            <div class="col-xs-12 col-md-12">
+              <p>This is the HELP !</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <span class="sidebar-enlarge"> } </span>
+    <span class="sidebar-minify" style="display:none"> { </span>
+  </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
   <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/dropzone.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 

@@ -35,8 +35,6 @@ html {
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
 }
 
 /*
@@ -96,6 +94,246 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+body {
+    background: #ffffff url('../img/style/paper_fibers.png') repeat;
+}
+
+#main {
+    height: 800px;
+}
+
+/**
+ * ADMIN SIDERBAR ----------------------------------------------------------- *
+ */
+#admin-sidebar {
+    position: fixed;
+    top: 0;
+    width: 80px;  
+    height: 100%;
+    z-index: 10000;    
+    background: #000 url('../img/style/cartographer.png') repeat;
+    color: white;
+    opacity: 0.9;
+    transition: width 1s;
+}
+
+#admin-sidebar .container {
+    width: 80%;
+    margin: 60px auto;
+}
+
+.sidebar-enlarge,
+.sidebar-minify,
+.enlarge-plus,
+.minify-plus {
+    position: absolute;
+    padding: 30px 6px;
+    background-color: #000;
+}
+
+.sidebar-enlarge {
+    top: 48%;
+    left: 68px;
+}
+
+.sidebar-minify {
+    top: 60%;
+    left: 98%;
+}
+
+.enlarge-plus {
+    top: 35%;
+    left: 98%;
+}
+
+.minify-plus {
+    top: 48%;
+    left: 99%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
