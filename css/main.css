@@ -123,6 +123,18 @@ body {
     margin: 60px auto;
 }
 
+.tab-pane {
+    margin: 20px 0;
+}
+
+#img-home .main img {
+    margin: 0 12px 12px 0;
+}
+
+#img-home .main {
+    padding: 0;
+}
+
 .sidebar-enlarge,
 .sidebar-minify,
 .enlarge-plus,
