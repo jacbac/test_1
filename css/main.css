@@ -101,6 +101,14 @@ body {
 
 #main {
     height: 800px;
+    padding-top: 80px;
+}
+
+#main .img-zone {
+    width: 150px;
+    height: 150px;
+    margin: 40px auto;
+    background-color: red;
 }
 
 /**

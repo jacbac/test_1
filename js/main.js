@@ -30,8 +30,26 @@ $(function() {
     }
   });
 
+  // Tabs
   $('#myTab a').click(function (e) {
-    e.preventDefault()
-    $(this).tab('show')
+    e.preventDefault();
+    $(this).tab('show');
   })
+
+  // Draggable img
+  $('.drag').draggable({
+    scroll: true,
+    cursor: 'move',
+    distance: 40,
+    snap: '.img-zone',
+    revert: 'valid'
+  });
+
+  // Droppable img-zone
+  $('.drop-revert').droppable({
+    drop: function(event, ui) {
+      $(ui.draggable.context).clone().appendTo($(this));
+      $(this).children().removeAttr('style');
+    }
+  });
 });  
