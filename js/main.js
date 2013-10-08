@@ -52,4 +52,11 @@ $(function() {
       $(this).children().removeAttr('style');
     }
   });
+
+  // Resizable img
+  $('.resizable').resizable({
+    containment: '.xtra-big',
+    aspectRatio: 1 / 1,
+    helper: 'ui-resizable-helper'
+  });
 });  

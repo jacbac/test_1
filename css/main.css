@@ -111,6 +111,15 @@ body {
     background-color: red;
 }
 
+#main .big {
+    width: 300px;
+    height: 300px;
+}
+
+#main .xtra-big {
+    width: 400px;
+    height: 200px;
+}
 /**
  * ADMIN SIDERBAR ----------------------------------------------------------- *
  */
